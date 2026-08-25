@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Cambridge AI 真卷 · 逐份題型索引</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  :root{--bg:#fff;--fg:#1a1a2e;--mut:#5a5a72;--line:#e3e3ef;--acc:#6b46c1;--card:#faf9ff;--th:#f0edfb}
+  @media(prefers-color-scheme:dark){:root{--bg:#14141f;--fg:#e8e8f2;--mut:#a0a0b8;--line:#2a2a3d;--acc:#b794f6;--card:#1c1c2b;--th:#22223a}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,"Segoe UI",Roboto,"Noto Sans TC",sans-serif}
+  .wrap{max-width:1080px;margin:0 auto;padding:32px 20px 80px}
+  h1{font-size:1.7rem;line-height:1.3;margin:.2em 0 .6em;color:var(--acc)}
+  h2{font-size:1.3rem;margin:1.8em 0 .5em;border-bottom:2px solid var(--line);padding-bottom:.3em}
+  h3{font-size:1.08rem;margin:1.4em 0 .4em}
+  blockquote{margin:1em 0;padding:.6em 1em;background:var(--card);border-left:4px solid var(--acc);border-radius:6px;color:var(--mut);font-size:.95em}
+  a{color:var(--acc)}
+  table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem;display:block;overflow-x:auto}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:var(--th);font-weight:700}
+  tr:nth-child(even) td{background:var(--card)}
+  code{background:var(--th);padding:.1em .4em;border-radius:4px;font-size:.88em}
+  .back{display:inline-block;margin-bottom:1.5em;color:var(--acc);text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+<div class="wrap"><a class="back" href="index.html">← 回課程總表</a>
+<header id="title-block-header">
+<h1 class="title">Cambridge AI 真卷 · 逐份題型索引</h1>
+</header>
+<h1 id="cambridge-ai-tripos-part-ib-真卷--逐份題型索引">Cambridge AI
+(Tripos Part IB) 真卷 · 逐份題型索引</h1>
+<blockquote>
+<p>對 <code>out/exams/cambridge/</code> 的 <strong>21 份</strong> past
+papers 逐份分類(2026-08-25 建)。 來源:<a
+href="https://www.cl.cam.ac.uk/teaching/exams/pastpapers/t-ArtificialIntelligence.html">Cambridge
+CST past papers — Artificial Intelligence</a>(1993 起全公開)。
+每份標主題、子題拆解與配分,末段給<strong>題型頻率統計</strong>與<strong>對
+NYCU 資格考 AI 卷的對照</strong>。 出題者代號 <strong>SBH /
+sbh11</strong> = Sean Holden(近十年 AI I
+命題者),故題風高度一致、可預測。</p>
+</blockquote>
+<h2 id="逐份索引">逐份索引</h2>
+<table>
+<thead>
+<tr>
+<th>檔案</th>
+<th>年份·卷</th>
+<th>主題大類</th>
+<th>子題型(配分)</th>
+<th>形式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>y2004p5q6.pdf</code></td>
+<td>2004 P5Q6</td>
+<td><strong>搜尋 / A*</strong></td>
+<td>問題表示(5)· 完備/最佳性定義(2)· admissible/monotonic 定義(2)· A*
+運作(5)· <strong>A* 最佳性證明</strong>(6)</td>
+<td>定義＋證明</td>
+</tr>
+<tr>
+<td><code>y2017p4q1.pdf</code></td>
+<td>2017 P4Q1</td>
+<td><strong>規劃(state-variable)＋CSP</strong></td>
+<td>CSP 定義(4)· 一般→二元約束(3)· state-variable 表示(5)· 狀態表示(2)·
+規劃→CSP 翻譯(6)</td>
+<td>定義＋建模</td>
+</tr>
+<tr>
+<td><code>y2017p4q2.pdf</code></td>
+<td>2017 P4Q2</td>
+<td><strong>神經網路 / 反向傳播</strong></td>
+<td>輸出節點梯度(線性,3)· sigmoid+交叉熵梯度(7)· <strong>一般 δ
+推導</strong>(10)</td>
+<td>數學推導</td>
+</tr>
+<tr>
+<td><code>y2018p6q1.pdf</code></td>
+<td>2018 P6Q1</td>
+<td><strong>規劃 as SAT</strong></td>
+<td>滑塊→SAT(起始/目標 4·後繼狀態公理 4·前提公理 2·動作互斥 3·SAT-solver
+演算法 3)· 用 local search 解 SAT(4)</td>
+<td>建模＋演算法</td>
+</tr>
+<tr>
+<td><code>y2018p6q2.pdf</code></td>
+<td>2018 P6Q2</td>
+<td><strong>神經網路 / CNN 反傳</strong></td>
+<td>視覺系統 ∂E/∂w 推導(12)· 卷積核修改後更新(8)</td>
+<td>數學推導</td>
+</tr>
+<tr>
+<td><code>y2019p6q1.pdf</code></td>
+<td>2019 P6Q1</td>
+<td><strong>規劃圖 / GraphPlan</strong></td>
+<td>積木→規劃問題(5)· 畫規劃圖(4)· 互斥:inconsistent effects/interfering
+actions(4)· competing preconditions(2)· 層數估計(2)·
+長積木擴充難點(3)</td>
+<td>畫圖＋概念</td>
+</tr>
+<tr>
+<td><code>y2019p6q2.pdf</code></td>
+<td>2019 P6Q2</td>
+<td><strong>規劃(state-variable)＋啟發搜尋</strong></td>
+<td>rigid relation/actions/state/goals(各2)· 啟發搜尋解規劃(3)· 與 CSP
+比較(5)· admissible 啟發式＋證明(4)</td>
+<td>概念＋證明</td>
+</tr>
+<tr>
+<td><code>y2020p6q1.pdf</code></td>
+<td>2020 P6Q1</td>
+<td><strong>神經網路 / 反傳＋RBF</strong></td>
+<td>隱藏節點反傳(8)· <strong>RBF 節點訓練演算法推導</strong>(12)</td>
+<td>數學推導</td>
+</tr>
+<tr>
+<td><code>y2020p6q2.pdf</code></td>
+<td>2020 P6Q2</td>
+<td><strong>CSP</strong></td>
+<td>二元約束表示(4)· forward checking(4)· <strong>AC-3
+演算法</strong>(6)· 施加一致性追蹤(6)</td>
+<td>演算法追蹤</td>
+</tr>
+<tr>
+<td><code>y2021p6q1.pdf</code></td>
+<td>2021 P6Q1</td>
+<td><strong>ML(線性迴歸)＋搜尋</strong></td>
+<td>線性迴歸梯度下降(5)· ||w||≈1 正則化(5)· 啟發搜尋組件(4)· 用 ML
+學啟發式(6)</td>
+<td>推導＋概念</td>
+</tr>
+<tr>
+<td><code>y2021p6q2.pdf</code></td>
+<td>2021 P6Q2</td>
+<td><strong>CSP / SAT</strong></td>
+<td>CSP 描述(3)· SAT(CNF)→CSP(3)· 一般→二元約束(4)· forward checking(3)·
+FC 追蹤(5)· 傳播更廣影響(2)</td>
+<td>建模＋追蹤</td>
+</tr>
+<tr>
+<td><code>y2022p6q1.pdf</code></td>
+<td>2022 P6Q1</td>
+<td><strong>規劃圖 / GraphPlan</strong></td>
+<td>畫規劃圖至 S2(3)· 何時可抽取計畫(1+2)· 畫 Si-1/Ai-1/Si(4)· 標 4
+種互斥(6)· 抽計畫 as 啟發搜尋(4)</td>
+<td>畫圖＋概念</td>
+</tr>
+<tr>
+<td><code>y2022p6q2.pdf</code></td>
+<td>2022 P6Q2</td>
+<td><strong>神經網路 / 反向傳播</strong></td>
+<td>權重共享 MLP:δ=σ'(a)∂E/∂y(3)· 輸出節點偏導(5)· 隱藏節點 δi(5)·
+隱藏參數偏導(7)</td>
+<td>數學推導</td>
+</tr>
+<tr>
+<td><code>y2023p7q1.pdf</code></td>
+<td>2023 P7Q1</td>
+<td><strong>規劃(state-variable)＋CSP</strong></td>
+<td>迷宮:domain/rigid relation/function/goal(1+2+3+1)· 動作實作(6)· 轉
+CSP(7)</td>
+<td>建模</td>
+</tr>
+<tr>
+<td><code>y2023p7q2.pdf</code></td>
+<td>2023 P7Q2</td>
+<td><strong>神經網路 / softmax 分類</strong></td>
+<td>softmax 動機(4)· 交叉熵目標推導(6)· 反傳到 E(w) 的額外步驟(10)</td>
+<td>數學推導</td>
+</tr>
+<tr>
+<td><code>y2024p7q1.pdf</code></td>
+<td>2024 P7Q1</td>
+<td><strong>ML / 邏輯斯迴歸分類</strong></td>
+<td>θ 的角色(1)· 改 activation 適應帶狀資料(6)·
+交叉熵梯度下降＋明確公式(13)</td>
+<td>推導＋建模</td>
+</tr>
+<tr>
+<td><code>y2024p7q2.pdf</code></td>
+<td>2024 P7Q2</td>
+<td><strong>規劃 / 偏序規劃(POP)</strong></td>
+<td>ordering constraint vs causal link(2+2)· 起始/結束態表示(3)·
+動作表示(7)· promotion/demotion(6)</td>
+<td>概念＋建模</td>
+</tr>
+<tr>
+<td><code>y2025p7q1.pdf</code></td>
+<td>2025 P7Q1</td>
+<td><strong>搜尋(啟發式)＋ML</strong></td>
+<td>heuristic 定義＋admissible(3)· <strong>凸組合 admissible
+證明</strong>(2)· 監督式學啟發式(3)· 誤差函數批判(2)· 更好誤差(4)·
+梯度下降推導(6)</td>
+<td>證明＋推導</td>
+</tr>
+<tr>
+<td><code>y2025p7q2.pdf</code></td>
+<td>2025 P7Q2</td>
+<td><strong>規劃(state-variable)</strong></td>
+<td>3D 洞穴:state-variable 元素(5)· 陷阱/鑰匙/越獄表示(5)· rigid
+relation 得 4 動作(5)· goRight 轉 CSP(5)</td>
+<td>建模</td>
+</tr>
+<tr>
+<td><code>y2026p7q1.pdf</code></td>
+<td>2026 P7Q1</td>
+<td><strong>CSP</strong></td>
+<td>CSP 組件＋解(4)· V6 可否賦值(1)· forward checking 概念(2)· FC
+追蹤序列 S(4)· 更早發現失敗(3)· <strong>graph-based
+backjumping</strong>(2+4)</td>
+<td>概念＋追蹤</td>
+</tr>
+<tr>
+<td><code>y2026p7q2.pdf</code></td>
+<td>2026 P7Q2</td>
+<td><strong>ML(線性迴歸)＋RBF</strong></td>
+<td>符號約束 via 正則化(4)· via 改 hw(x)(4)· 何者較佳(2)· MLP vs RBF
+差異(2)· <strong>RBF 梯度修改</strong>(8)</td>
+<td>推導＋概念</td>
+</tr>
+</tbody>
+</table>
+<h2 id="題型頻率統計21-份">題型頻率統計(21 份)</h2>
+<table>
+<thead>
+<tr>
+<th>主題大類</th>
+<th>出現份數</th>
+<th>佔比</th>
+<th>代表卷</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>神經網路 / 反向傳播</strong>(含 CNN/RBF/softmax)</td>
+<td>6</td>
+<td>29%</td>
+<td>2017P4Q2, 2018P6Q2, 2020P6Q1, 2022P6Q2, 2023P7Q2, 2026P7Q2</td>
+</tr>
+<tr>
+<td><strong>規劃</strong>(state-variable / GraphPlan / SAT / POP)</td>
+<td>8</td>
+<td>38%</td>
+<td>2017P4Q1, 2018P6Q1, 2019P6(Q1Q2), 2022P6Q1, 2023P7Q1, 2024P7Q2,
+2025P7Q2</td>
+</tr>
+<tr>
+<td><strong>CSP</strong>(forward checking / AC-3 / backjumping)</td>
+<td>6</td>
+<td>29%</td>
+<td>2017P4Q1, 2020P6Q2, 2021P6Q2, 2023P7Q1, 2025P7Q2, 2026P7Q1</td>
+</tr>
+<tr>
+<td><strong>搜尋 / 啟發式</strong>(A* / admissible / 證明)</td>
+<td>4</td>
+<td>19%</td>
+<td>2004P5Q6, 2019P6Q2, 2021P6Q1, 2025P7Q1</td>
+</tr>
+<tr>
+<td><strong>ML(非神經)</strong>(線性/邏輯斯迴歸、梯度下降)</td>
+<td>5</td>
+<td>24%</td>
+<td>2021P6Q1, 2024P7Q1, 2025P7Q1, 2026P7Q2</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>註:一份卷常橫跨 2 大類(如規劃常接 CSP、搜尋常接 ML),故佔比加總
+&gt;100%。</p>
+</blockquote>
+<h3 id="三條穩定命題主軸近十年-sbh11">三條穩定命題主軸(近十年
+sbh11)</h3>
+<ol type="1">
+<li><strong>規劃 ⇄ CSP/SAT 的互轉</strong> — 幾乎每年一題。掌握
+state-variable representation、planning graph(mutex 四型)、規劃→CSP/SAT
+翻譯。</li>
+<li><strong>神經網路反向傳播的</strong>「<strong>從頭推導 δ</strong>」 —
+每 1–2 年一題,變體為
+CNN(2018)、weight-sharing(2022)、RBF(2020/2026)、softmax(2023)。必練純手推
+δ 與 ∂E/∂w。</li>
+<li><strong>CSP 一致性演算法</strong> — forward checking 必考,進階到
+AC-3(2020)、backjumping(2026)。要能<strong>逐步追蹤</strong>指定賦值序列。</li>
+</ol>
+<h2 id="對-nycu-資格考-ai-卷的對照">對 NYCU 資格考 AI 卷的對照</h2>
+<table>
+<thead>
+<tr>
+<th>Cambridge 主軸</th>
+<th>是否落在 NYCU 資格考 AI 範圍</th>
+<th>練這批的價值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>搜尋 / A* / admissible 證明</td>
+<td>✅ 核心</td>
+<td><strong>高</strong> — 證明題風格與資格考申論一致</td>
+</tr>
+<tr>
+<td>CSP / forward checking / AC-3</td>
+<td>✅ 核心</td>
+<td><strong>高</strong> — 逐步追蹤訓練最有效</td>
+</tr>
+<tr>
+<td>規劃(state-variable / GraphPlan)</td>
+<td>⚠️ 部分(視當年命題)</td>
+<td>中 — 建模思維可遷移</td>
+</tr>
+<tr>
+<td>神經網路反傳手推</td>
+<td>✅(AIMA ML 章 + DL)</td>
+<td><strong>高</strong> — 純手推 δ 是共同硬功</td>
+</tr>
+<tr>
+<td>線性/邏輯斯迴歸梯度下降</td>
+<td>✅ 核心</td>
+<td><strong>高</strong> — 公式化梯度是必得分點</td>
+</tr>
+</tbody>
+</table>
+<p><strong>一句話:</strong> 這 21 份最該優先刷 <strong>CSP
+逐步追蹤</strong>(2020P6Q2, 2021P6Q2, 2026P7Q1)、<strong>A*/admissible
+證明</strong>(2004P5Q6, 2025P7Q1)、<strong>反傳手推</strong>(2017P4Q2,
+2022P6Q2) — 三者題風與 NYCU
+資格考申論/證明最貼近,且答案有標準結構、好自評。</p>
+<hr />
+<p><em>生成:2026-08-25 · 21 份逐份分類 · 資料來源公開(Cambridge CST past
+papers),僅供個人備考。</em></p>
+</div>
+</body>
+</html>
