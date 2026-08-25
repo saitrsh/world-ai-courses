@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>世界前 10 大學 · AI 旗艦課程總表</title>
+<style>
+:root{
+  --bg:#0d1117; --card:#161b22; --edge:#30363d; --fg:#e6edf3; --mut:#8b949e;
+  --accent:#58a6ff; --ok:#3fb950; --warn:#d29922; --lock:#8b949e;
+  --rowhover:#1c2330;
+}
+@media (prefers-color-scheme: light){
+  :root{--bg:#f6f8fa;--card:#fff;--edge:#d0d7de;--fg:#1f2328;--mut:#636c76;
+        --accent:#0969da;--rowhover:#eef2f6;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:15px/1.65 -apple-system,"Segoe UI","PingFang TC","Heiti TC","Microsoft JhengHei",sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 60px}
+header h1{font-size:26px;margin:0 0 6px;letter-spacing:.5px}
+.sub{color:var(--mut);font-size:13px;margin:0 0 20px}
+.insight{background:linear-gradient(135deg,#12233b,#161b22);border:1px solid var(--edge);
+  border-left:4px solid var(--accent);border-radius:12px;padding:16px 20px;margin:0 0 24px}
+.insight b{color:var(--accent)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--mut);margin:0 0 14px}
+.legend span{white-space:nowrap}
+.tag{display:inline-block;padding:1px 8px;border-radius:20px;font-size:12px;font-weight:600}
+.t-open2{background:#0e2a17;color:#56d364;border:1px solid #1a4527}
+.t-open{background:#12233b;color:#58a6ff;border:1px solid #1f3a5f}
+.t-lock{background:#21262d;color:#8b949e;border:1px solid #30363d}
+@media (prefers-color-scheme: light){
+  .t-open2{background:#dafbe1;color:#1a7f37;border-color:#aceebb}
+  .t-open{background:#ddf4ff;color:#0969da;border-color:#b6e3ff}
+  .t-lock{background:#eaeef2;color:#636c76;border-color:#d0d7de}
+}
+.tablewrap{overflow-x:auto;border:1px solid var(--edge);border-radius:14px;background:var(--card)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:860px}
+th,td{padding:11px 13px;text-align:left;border-bottom:1px solid var(--edge);vertical-align:top}
+thead th{position:sticky;top:0;background:var(--card);color:var(--mut);font-weight:700;
+  font-size:12px;text-transform:uppercase;letter-spacing:.4px;z-index:1}
+tbody tr:hover{background:var(--rowhover)}
+tbody tr:last-child td{border-bottom:none}
+.uni{font-weight:700;font-size:15px}
+.rank{color:var(--mut);font-variant-numeric:tabular-nums}
+.course{color:var(--fg)}
+.topics{color:var(--mut);font-size:12.5px}
+.book{font-size:12.5px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.links a{margin-right:8px;font-size:12.5px;white-space:nowrap}
+h2{font-size:18px;margin:34px 0 10px;border-bottom:1px solid var(--edge);padding-bottom:6px}
+ol{padding-left:20px}
+ol li{margin:6px 0}
+.foot{color:var(--mut);font-size:12px;margin-top:30px;border-top:1px solid var(--edge);padding-top:14px}
+.pill-book{color:var(--warn);font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>🌐 世界前 10 大學 · 人工智慧旗艦課程總表</h1>
+  <p class="sub">彙整於 2026-08-25 · 每格皆附可查證出處 · 「前 10」為 CSRankings〈AI〉／QS CS／US News 三榜 common 前列 + 指定校取樣,非單一權威排名</p>
+</header>
+
+<div class="insight">
+  <b>一句話洞察:</b> Russell &amp; Norvig《Artificial Intelligence: A Modern Approach》(AIMA)是這 10 校的<b>事實標準課本</b>,課綱核心也高度一致:search → CSP → 賽局(minimax/α-β)→ 機率/Bayes → MDP/RL → 機器學習/邏輯。<b>這正是 NYCU 資格考 AI 卷的範圍</b> — 讀通 AIMA 一本,等於同時覆蓋世界頂校 AI 核心 + 你的資格考。差別只在「考古題公不公開」。
+</div>
+
+<div class="legend">
+  <span><span class="tag t-open2">全公開＋解答</span> 可直接抓,含解答</span>
+  <span><span class="tag t-open">公開</span> 課網/考古題可抓</span>
+  <span><span class="tag t-lock">限校內/選課</span> 需帳號登入</span>
+</div>
+
+<div class="tablewrap">
+<table>
+<thead>
+<tr><th>#</th><th>大學</th><th>旗艦 AI 課</th><th>課綱重點</th><th>參考書</th><th>考古題可得性</th><th>連結</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="rank">1</td>
+  <td class="uni">MIT</td>
+  <td class="course">6.034 Artificial Intelligence</td>
+  <td class="topics">知識表示、問題求解(search)、推理、學習、視覺與語言</td>
+  <td class="book">AIMA (R&amp;N)</td>
+  <td><span class="tag t-open">公開</span> OCW 有多年 quiz+期末</td>
+  <td class="links"><a href="https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/" target="_blank">官網</a><a href="https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/pages/exams/" target="_blank">考古題</a></td>
+</tr>
+<tr>
+  <td class="rank">2</td>
+  <td class="uni">Stanford</td>
+  <td class="course">CS221 AI: Principles and Techniques</td>
+  <td class="topics">search、CSP、賽局、MDP、圖模型、ML、邏輯</td>
+  <td class="book">講義為主(參考 AIMA)</td>
+  <td><span class="tag t-lock">部分</span> 舊 archive 有作業;考卷多需登入</td>
+  <td class="links"><a href="https://cs221.stanford.edu/" target="_blank">官網</a><a href="https://web.stanford.edu/class/archive/cs/cs221/" target="_blank">archive</a></td>
+</tr>
+<tr>
+  <td class="rank">3</td>
+  <td class="uni">CMU</td>
+  <td class="course">15-281 AI: Representation &amp; Problem Solving</td>
+  <td class="topics">知識表示、search、最佳化、規劃、機率推論、MDP、監督+RL、深度學習、多智能體對抗</td>
+  <td class="book">AIMA + 自編</td>
+  <td><span class="tag t-lock">限選課</span> 零星 recitation 流出</td>
+  <td class="links"><a href="https://www.cs.cmu.edu/~15281/" target="_blank">官網</a><a href="https://csd.cmu.edu/course/15281/s24" target="_blank">csd</a></td>
+</tr>
+<tr>
+  <td class="rank">4</td>
+  <td class="uni">UC Berkeley</td>
+  <td class="course">CS188 Introduction to AI</td>
+  <td class="topics">search、賽局、CSP、MDP/RL、Bayes nets 推理、ML</td>
+  <td class="book">AIMA (R&amp;N)</td>
+  <td><span class="tag t-open">公開</span> 各學期站附 exams+解答</td>
+  <td class="links"><a href="https://inst.eecs.berkeley.edu/~cs188/" target="_blank">官網</a><a href="https://ai.berkeley.edu/" target="_blank">Pacman 專案</a></td>
+</tr>
+<tr>
+  <td class="rank">5</td>
+  <td class="uni">Harvard</td>
+  <td class="course">CS182 Introduction to AI</td>
+  <td class="topics">規劃與 search、機率推理、機器學習</td>
+  <td class="book">AIMA;CS181 學生自編</td>
+  <td><span class="tag t-lock">考卷限課</span> CS181 課本 GitHub 公開</td>
+  <td class="links"><a href="https://scottk.seas.harvard.edu/classes/cs-182-artificial-intelligence" target="_blank">CS182</a><a href="https://github.com/harvard-ml-courses/cs181-textbook" target="_blank">CS181 課本</a></td>
+</tr>
+<tr>
+  <td class="rank">6</td>
+  <td class="uni">U Toronto</td>
+  <td class="course">CSC384 Introduction to AI</td>
+  <td class="topics">search、CSP、邏輯、規劃、不確定性/Bayes、MDP</td>
+  <td class="book">AIMA (R&amp;N)</td>
+  <td><span class="tag t-lock">限課</span> 舊學期站有作業/slides</td>
+  <td class="links"><a href="https://www.teach.cs.toronto.edu/~csc384h/winter/" target="_blank">官網</a><a href="http://www.cs.toronto.edu/~fbacchus/csc384/home.html" target="_blank">fbacchus 版</a></td>
+</tr>
+<tr>
+  <td class="rank">7</td>
+  <td class="uni">Oxford</td>
+  <td class="course">Artificial Intelligence (CS undergrad)</td>
+  <td class="topics">以 <b>search</b> 為核心貫穿各技術選型</td>
+  <td class="book">AIMA (R&amp;N)</td>
+  <td><span class="tag t-lock">限校內</span> past papers 需 Oxford 帳號</td>
+  <td class="links"><a href="https://www.cs.ox.ac.uk/teaching/courses/2025-2026/ai/" target="_blank">官網</a></td>
+</tr>
+<tr>
+  <td class="rank">8</td>
+  <td class="uni">Cambridge</td>
+  <td class="course">Artificial Intelligence (Tripos) + ML &amp; Bayesian Inference</td>
+  <td class="topics">search、知識表示、規劃;ML&amp;Bayesian:機率模型/推論</td>
+  <td class="book">AIMA (R&amp;N)</td>
+  <td><span class="tag t-open2">最開放</span> AI past papers 1993 起全公開</td>
+  <td class="links"><a href="https://www.cl.cam.ac.uk/teaching/" target="_blank">官網</a><a href="https://www.cl.cam.ac.uk/teaching/exams/pastpapers/t-ArtificialIntelligence.html" target="_blank">past papers</a></td>
+</tr>
+<tr>
+  <td class="rank">9</td>
+  <td class="uni">ETH Zurich</td>
+  <td class="course">Artificial Intelligence / Probabilistic AI (263-5210)</td>
+  <td class="topics">(PAI) Bayesian learning、GP、Bayesian optimization、MDP/RL;classic AI 走 AIMA</td>
+  <td class="book">AIMA 4th ed</td>
+  <td><span class="tag t-lock">限 moodle</span> PAI 課網有 lecture notes</td>
+  <td class="links"><a href="https://las.inf.ethz.ch/teaching/pai-f24" target="_blank">Probabilistic AI</a></td>
+</tr>
+<tr>
+  <td class="rank">10</td>
+  <td class="uni">Tsinghua 清華</td>
+  <td class="course">人工智能导论 (Intro to AI)</td>
+  <td class="topics">AI 概念、搜索、知識表示、推理、機器學習/深度學習</td>
+  <td class="book">AIMA 中譯(殷建平译)+ 马少平講義</td>
+  <td><span class="tag t-lock">限校內</span> 公開題庫少</td>
+  <td class="links"><a href="https://www.tsinghua.edu.cn/" target="_blank">官網</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2>給備考的取用建議(依考古題開放度)</h2>
+<ol>
+  <li><b>Cambridge</b> — 最該挖:AI I/II 從 1993 年起全公開 PDF,題型偏「寫清楚、講原理」,跟 NYCU 資格考的證明/申論風格接近。<a href="cambridge-question-index.md">▸ 21 份逐份題型索引</a></li>
+  <li><b>Berkeley CS188</b> — 公開 exams <b>附解答</b>,MDP/RL/Bayes nets 練習最系統,互動式 Pacman 專案。</li>
+  <li><b>MIT 6.034 (OCW)</b> — 公開多年 quiz+期末,search/CSP/約束傳播題目經典。</li>
+  <li>其餘(Stanford/CMU/Harvard/Toronto/Oxford/ETH/Tsinghua)課綱與課本可參考,但<b>考卷多需校內帳號</b>,不強求。</li>
+</ol>
+
+<h2>排名依據(出處)</h2>
+<ol>
+  <li><a href="https://csrankings.org/#/index?ai&world" target="_blank">CSRankings.org — Artificial Intelligence area</a> — 依論文產出的量化 CS 排名。</li>
+  <li>QS World University Rankings by Subject: Computer Science &amp; Information Systems。</li>
+  <li>US News Best Global Universities — Computer Science / Artificial Intelligence。</li>
+</ol>
+<p class="topics">⚠️ 三榜的「前 10」略有出入(CSRankings 常見 CMU/MIT/Stanford/Berkeley/UIUC/Tsinghua 居前;QS/USNews 會納入 Oxbridge/ETH/Toronto)。本表取三榜 common 前列 + 指定校,非唯一標準答案。</p>
+
+<div class="foot">
+  資料如何取得:<code>fetch_courses.py</code>(純 stdlib、冪等、附 manifest)對各校課網/考古題頁做程式化抓取。公開可直接抓的是 MIT OCW / Berkeley CS188 / Cambridge past papers;其餘課網 HTML 可存,考卷受校內登入保護(script 標記 restricted、不硬闖)。<br>
+  彙整 2026-08-25 · 僅供個人備考參考。
+</div>
+</div>
+</body>
+</html>
